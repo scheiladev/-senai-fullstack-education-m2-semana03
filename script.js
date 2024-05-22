@@ -1,6 +1,6 @@
 /* Exercício 1 */
 
-let listaNotas = [8, 10, 9.8, 5.5];
+let listaNotas = [8, 10, 7, 5];
 
 function calculaMedia(notas) {
   let soma = 0;
@@ -105,3 +105,20 @@ function notasMateria() {
 }
 
 notasMateria();
+document.write("<br>");
+
+/* Exercício 7 */
+
+function encontrarMaiorNumero(numeros) {
+  let maiorNumero = numeros[0];
+
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maiorNumero) {
+      maiorNumero = numeros[i];
+    }
+  }
+
+  return maiorNumero;
+}
+
+document.write("O maior número é " + encontrarMaiorNumero(listaNotas));
