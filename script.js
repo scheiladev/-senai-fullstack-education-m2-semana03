@@ -49,3 +49,27 @@ function tabuada(numero) {
 
 tabuada(8);
 document.write("<br>");
+
+/* Exercício 5 */
+
+function entrevistaAluno() {
+  let nome = window.prompt("Qual o nome do aluno?");
+  let idade = window.prompt("Qual a idade do aluno?");
+  let serie = window.prompt("Qual a série do aluno?");
+  let escola = window.prompt("Qual o nome da escola?");
+  let materia = window.prompt("Qual a sua matéria favorita?");
+
+  let confirmacao = window.confirm("Você confirma os dados inseridos? ");
+
+  return confirmacao
+    ? document.write(`
+      <p>Nome do aluno: <strong>${nome}</strong></p>
+      <p>Idade do aluno: <strong>${idade}</strong></p>
+      <p>Série do aluno: <strong>${serie}</strong></p>
+      <p>Nome da escola: <strong>${escola}</strong></p>
+      <p>Matéria favorita: <strong>${materia}</strong></p>
+    `)
+    : document.write(`Os dados não foram confirmados.`);
+}
+
+entrevistaAluno();
