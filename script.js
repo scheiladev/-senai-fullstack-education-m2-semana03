@@ -24,3 +24,15 @@ function resultadoFinal(media) {
 }
 
 document.write(resultadoFinal(mediaNotas));
+
+/* Exercício 3 */
+
+let listaAlunos = ["Pedro", "Maria", "João", "Paula"];
+
+function imprimirNomes(nomes) {
+  return nomes.forEach((aluno) => {
+    document.write(`${aluno}<br>`);
+  });
+}
+
+imprimirNomes(listaAlunos);
