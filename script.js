@@ -36,3 +36,16 @@ function imprimirNomes(nomes) {
 }
 
 imprimirNomes(listaAlunos);
+document.write("<br>");
+
+/* Exercício 4 */
+
+function tabuada(numero) {
+  for (let i = 0; i <= 10; i++) {
+    let resultado = numero * i;
+    document.write(`${numero} x ${i} = ${resultado}<br>`);
+  }
+}
+
+tabuada(8);
+document.write("<br>");
